@@ -9,6 +9,8 @@ import seaborn as sns
 sns.set(style="dark")
 hour_df = pd.read_csv('dashboard/hour.csv')
 
+st.set_option('deprecation.showPyplotGlobalUse', False)
+
 drop = ['instant','windspeed', 'weathersit']
 
 for i in hour_df.columns:
